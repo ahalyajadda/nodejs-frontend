@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hodllnfo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body id="body">
+    <div class="container">
+      <div class="header">
+        <div class="brand">
+          <img src="brand.png" alt="brand" />
+          <span class="brand-content"
+            >Powered By<b class="name"> Finstreet</b></span
+          >
+        </div>
+        <div class="navdiv lists">
+          <div class="options">
+            <select name="currency" class="currency bg-theme" \>
+              <option value="INR">INR</option>
+            </select>
+          </div>
+          <div class="options">
+            <select name="currency" class="currency bg-theme" \>
+              <option value="BTC">BTC</option>
+              <option value="ETH">ETH</option>
+              <option value="USDT">USDT</option>
+              <option value="XRP">XRP</option>
+              <option value="TRX">TRX</option>
+              <option value="DASH">DASH</option>
+              <option value="ZEC">ZEC</option>
+              <option value="XEM">XEM</option>
+              <option value="IOST">IOST</option>
+              <option value="WIN">WIN</option>
+              <option value="BTT">BTT</option>
+              <option value="WRX">WRX</option>
+            </select>
+          </div>
+
+          <div class="options buy">
+            <a href="#" class="bg-theme">BUY BTC</a>
+          </div>
+        </div>
+        <div class="navdiv links">
+          <div class="timertelegram">
+            <div class="timer">
+              <span id="displayTime">60</span>
+            </div>
+            <div class="telegramlink">
+              <img src="telegram.svg" />
+              <span class="selector" type="button">Connect Telegram</span>
+            </div>
+          </div>
+
+          <div class="theme">
+            <img
+              src="dark2.avif"
+              alt="dark-theme-icon"
+              id="image"
+              class="dark theme-pic"
+              onClick="changeImage()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Last</th>
+              <th>Buy / Sell Price</th>
+              <th>Volume</th>
+              <th>Base_unit</th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+        </table>
+      </div>
+      <div class="footer">
+        <div class="copyright">
+          <p>Copyright © 2019 Hodllnfo.com</p>
+          <p>Support</p>
+        </div>
+        <div class="btn">
+          <input
+            type="button"
+            class="footer-btn"
+            value="Add hodlinfo to home screen"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

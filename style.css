@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 17, 29);
+  color: white;
+  width: 100%;
+}
+.dark-theme {
+  background-color: rgb(20, 17, 29);
+  color: white;
+}
+.bg-theme {
+  background-color: rgb(37, 37, 37);
+}
+
+.white-theme {
+  background-color: white;
+  color: black;
+}
+
+.header {
+  margin: 40px 40px;
+  display: flex;
+  justify-content: space-around;
+}
+img {
+  width: 250px;
+  height: 50px;
+}
+.brand-content {
+  display: block;
+  color: inherit;
+}
+.name {
+  color: rgb(21, 182, 182);
+}
+.navdiv {
+  display: flex;
+  justify-content: space-around;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.options {
+  margin: 0 10px;
+}
+select {
+  padding: 8px;
+  border-radius: 10px;
+  color: inherit;
+  border: none;
+}
+
+.options a {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  color: rgb(21, 182, 182);
+  border-radius: 50%;
+  border: 2px solid rgb(21, 182, 182);
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+.timer span {
+  margin-top: 5px;
+}
+.timertelegram {
+  display: flex;
+  justify-content: space-around;
+}
+.telegramlink {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(21, 182, 182);
+  border-radius: 10px;
+  padding: 10px;
+}
+.telegramlink img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  /* margin-top: -5px; */
+}
+.selector {
+  /* padding: 10px 12px; */
+  background-color: rgb(21, 182, 182);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+.theme {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.dark {
+  width: 60px;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.table {
+  width: 95%;
+  margin: auto;
+}
+table {
+  border-spacing: 0 20px;
+  border-collapse: separate;
+}
+th {
+  color: rgb(156, 156, 156);
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  color: inherit;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  border-style: solid none;
+  border: 1px solid rgb(37, 37, 37);
+}
+td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.copyright {
+  display: flex;
+  margin: 20px 20px;
+  justify-content: space-between;
+}
+
+.copyright p {
+  color: rgb(109, 108, 108);
+}
+.btn {
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+  background-color: rgb(20, 17, 29);
+}
+.copyright {
+  margin-bottom: 40px;
+}
+.footer-btn {
+  border: 1px solid rgb(21, 182, 182);
+  margin: 10px 0;
+  background-color: rgb(20, 17, 29);
+  padding: 10px 12px;
+  color: rgb(21, 182, 182);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.footer-btn:hover {
+  background-color: rgb(21, 182, 182);
+  color: white;
+}
+@media screen and (max-width: 920px) {
+  select {
+    font-size: 16px;
+  }
+  .links {
+    display: block;
+  }
+  .timertelegram {
+    margin-bottom: 20px;
+  }
+  .options a {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+  .telegramlink {
+    margin-left: 20px;
+    padding: 5px;
+    width: 100%;
+  }
+  .selector {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .brand {
+    margin: auto;
+  }
+
+  img {
+    width: 200px;
+    height: 40px;
+  }
+  .brand-content {
+    font-size: 16px;
+    text-align: center;
+  }
+  .timertelegram {
+    margin-bottom: 20px;
+  }
+
+  .navdiv {
+    margin-top: 20px;
+  }
+  .links {
+    display: block;
+  }
+  .timer {
+    margin-right: 20px;
+  }
+
+  .telegramlink {
+    width: 80%;
+  }
+  .selector {
+    font-size: 15px;
+  }
+  .dark {
+    width: 60px;
+    height: 60px;
+  }
+  .table {
+    overflow-x: auto;
+    width: 95%;
+  }
+
+  th {
+    white-space: nowrap;
+    font-size: 25px;
+  }
+  td {
+    white-space: nowrap;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .links {
+    display: flex;
+    justify-content: space-around;
+  }
+  .timer {
+    margin-right: 40px;
+  }
+  .telegramlink {
+    width: 80%;
+    padding: 15px;
+  }
+  .selector {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .brand {
+    margin: auto;
+  }
+  .navdiv {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .telegramlink {
+    width: 60%;
+    padding: 10px;
+  }
+  .telegramlink img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+  }
+  .selector {
+    font-size: 10px;
+  }
+  .options {
+    margin: 0 20px;
+  }
+  select {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .options a {
+    white-space: nowrap;
+    font-size: 15px;
+    padding: 5px;
+  }
+  th {
+    font-size: 20px;
+  }
+  td {
+    white-space: nowrap;
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .timer {
+    margin: auto;
+  }
+  .links {
+    display: block;
+  }
+  select {
+    /* margin-left: -15px; */
+    font-size: 15px;
+    padding: 5px;
+  }
+  .options {
+    margin: 0 -20px;
+  }
+
+  .options a {
+    white-space: nowrap;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .telegramlink {
+    width: 60%;
+    padding: 10px;
+  }
+  .selector {
+    font-size: 12px;
+  }
+}
