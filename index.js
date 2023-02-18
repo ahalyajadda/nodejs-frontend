@@ -33,7 +33,7 @@ function changeImage() {
   }
 }
 
-fetch('http://localhost:3030/getData').then((response) => {
+fetch('https://backend-node-6o88.onrender.com/getData').then((response) => {
   response.json().then((data) => {
     // console.log(data);
     var temp = '';
